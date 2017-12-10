@@ -5,8 +5,9 @@ properties([
     projectUrlStr: 'https://github.com/karthikveridic/type2'],
     pipelineTriggers([ upstream(
       threshold: 'SUCCESS',
-      upstreamProjects: 'https://github.com/karthikveridic/type3'
-    )])])
+      upstreamProjects: 'https://github.com/karthikveridic/type1')
+         ])
+])
 
 pipeline {
     agent any 
